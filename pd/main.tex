@@ -1,0 +1,33 @@
+\documentclass[11pt,a4paper,dvipdfmx]{ujarticle}
+\usepackage[utf8]{inputenc}
+\newcommand{\name}{学振 太郎}%名前を変更
+\usepackage{pd}
+%== 使いたいパッケージがあれば以下に追加 ==
+\usepackage{wrapfig}
+
+\begin{document}
+%== pp.3-4 ==
+\newgeometry{top=13mm, bottom=30mm, left=19mm, right=19mm}
+\vspace*{20mm}\input{20_previous_study.tex}
+\ifthenelse{\equal{\value{page}}{1}}{~\clearpage}{}%
+%== pp.5-7 ==
+~\clearpage
+\newgeometry{top=13mm, bottom=25mm, left=19mm, right=19mm}
+\begin{textblock*}{172mm}(19mm, 32mm)\input{31_background.tex}\end{textblock*}
+\vspace*{151mm}\input{32_purpose.tex}
+\ifthenelse{\equal{\value{page}}{3}}{~\clearpage}{}%
+\ifthenelse{\equal{\value{page}}{4}}{~\clearpage}{}%
+\begin{textblock*}{172mm}(19mm, 157mm)\input{33_feature.tex}\end{textblock*}
+%== pp.8 ==
+~\clearpage
+\begin{textblock*}{172mm}(19mm, 28mm)\input{34_plan.tex}\end{textblock*}
+%== pp.9 ==
+~\clearpage
+\begin{textblock*}{176mm}(18mm, 36mm)\input{35_lab.tex}\end{textblock*}
+\begin{textblock*}{177mm}(16.5mm, 148mm)\input{36_compliance.tex}\end{textblock*}
+%== pp.10-11 ==
+~\clearpage
+\newgeometry{top=13mm, bottom=31mm, left=19mm, right=19mm}
+\vspace*{73.5mm}\input{40_achievement.tex}
+\ifthenelse{\equal{\value{page}}{8}}{~\clearpage~}{}%
+\end{document}

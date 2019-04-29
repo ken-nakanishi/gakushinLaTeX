@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+ - docker run --mount src=${TRAVIS_BUILD_DIR}/dc,dst=/workdir,type=bind paperist/alpine-texlive-ja
+  /bin/sh -c "latexmk main.tex && latexmk -C"
+ - docker run --mount src=${TRAVIS_BUILD_DIR}/pd,dst=/workdir,type=bind paperist/alpine-texlive-ja
+  /bin/sh -c "latexmk main.tex && latexmk -C"
+

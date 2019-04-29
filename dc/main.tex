@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper,dvipdfmx]{ujarticle}
+\usepackage[utf8]{inputenc}
+\newcommand{\name}{学振 太郎}%名前を変更
+\usepackage{dc}
+%== 使いたいパッケージがあれば以下に追加 ==
+\usepackage{wrapfig}
+
+\begin{document}
+%== pp.1-2 ==
+\newgeometry{top=13mm, bottom=30mm, left=19mm, right=19mm}
+\vspace*{19.5mm}\input{20_previous_study.tex}
+\ifthenelse{\equal{\value{page}}{1}}{~\clearpage}{}%
+\begin{textblock*}{172mm}(19mm, 157mm)\input{31_background.tex}\end{textblock*}
+%== pp.3 ==
+~\clearpage
+\begin{textblock*}{172mm}(19mm, 35mm)\input{32_purpose.tex}\end{textblock*}
+%== pp.4-5 ==
+~\clearpage
+\newgeometry{top=13mm, bottom=25mm, left=19mm, right=19mm}
+\begin{textblock*}{172mm}(19mm, 31mm)\input{33_feature.tex}\end{textblock*}
+\vspace*{125mm}\input{34_plan.tex}
+\ifthenelse{\equal{\value{page}}{4}}{~\clearpage}{}%
+\begin{textblock*}{172mm}(19mm, 113mm)\input{35_compliance.tex}\end{textblock*}
+%== pp.6 ==
+~\clearpage
+\begin{textblock*}{174mm}(18mm, 92mm)\input{40_achievement.tex}\end{textblock*}
+%== pp.7 ==
+~\clearpage
+\begin{textblock*}{170mm}(20mm, 43mm)\input{50_motivation.tex}\end{textblock*}
+\end{document}

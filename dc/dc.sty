@@ -1,0 +1,24 @@
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[absolute]{textpos}
+\usepackage{ifthen}
+\pagestyle{empty}
+\usepackage[texcoord]{eso-pic}
+\usepackage{lipsum}
+
+\newcommand{\background}[2]{%
+    \raisebox{-\paperheight}{%
+        \includegraphics[width=\paperwidth,height=\paperheight,page=#1]{original.pdf}%
+        \parbox{0mm}{\begin{textblock*}{45mm}(148mm,#2)\centering\name\end{textblock*}}%
+    }%
+}
+
+\AddToShipoutPicture{%
+\ifthenelse{\value{page}=1}{\background{1}{276.5mm}}{%
+\ifthenelse{\value{page}=2}{\background{2}{276mm}}{%
+\ifthenelse{\value{page}=3}{\background{3}{276.3mm}}{%
+\ifthenelse{\value{page}=4}{\background{4}{277mm}}{%
+\ifthenelse{\value{page}=5}{\background{5}{279.3mm}}{%
+\ifthenelse{\value{page}=6}{\background{6}{273.5mm}}{%
+\ifthenelse{\value{page}=7}{\background{7}{278.5mm}}{%
+}}}}}}}}
