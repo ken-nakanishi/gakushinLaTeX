@@ -36,11 +36,14 @@ latexmk main.tex
 後のページがすべてズレます。
 
 ## 開発者向け
-改善案があれば是非issueやpull requestでご教授いただきたいです。
-また、バグを見つけた場合も報告お願いいたします。
+バグを見つけた場合はissueやpull requestで報告お願いいたします。
+改善案があればissueでご提案いただきたいです。
 
 ## platexを使いたい人向け
 uplatexではなくplatexを使いたい方は次のように変更
  
 - main.texの`ujarticle`を`jarticle`または`jsarticle`に変更
 - latexmkrcの`uplatex`と`upbibtex`から`u`を削除
+
+## 連絡先
+- twitter: [@mithernet](https://twitter.com/mithernet)
