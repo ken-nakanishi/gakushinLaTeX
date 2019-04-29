@@ -46,6 +46,3 @@ uplatexではなくplatexを使いたい方は次のように変更
  
 - main.texの`ujarticle`を`jarticle`または`jsarticle`に変更
 - latexmkrcの`uplatex`と`upbibtex`から`u`を削除
-
-## 連絡先
-- twitter: [@mithernet](https://twitter.com/mithernet)
