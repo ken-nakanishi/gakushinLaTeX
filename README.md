@@ -7,6 +7,8 @@ DC・PD申請のための非公式LaTeXテンプレートです。
 [科研費LaTeX](http://osksn2.hep.sci.osaka-u.ac.jp/~taku/kakenhiLaTeX/)
 です。
 
+ダウンロードは[こちら](https://github.com/ken-nakanishi/gakushinLaTeX/releases)からできます。
+
 ## 非公式LaTeXテンプレートを作った理由
 - 簡潔なコードにしたい
 - 容易に調整可能なコードにしたい
