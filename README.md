@@ -46,3 +46,6 @@ uplatexではなくplatexを使いたい方は次のように変更
  
 - main.texの`ujarticle`を`jarticle`または`jsarticle`に変更
 - latexmkrcの`uplatex`と`upbibtex`から`u`を削除
+
+## 免責事項
+この学振LaTeXを用いることで生じた損害等の一切の責任を負いかねますので、ご了承ください。
